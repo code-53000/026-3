@@ -5,6 +5,7 @@ import KiteForm from '@/pages/KiteForm.vue';
 import KiteDetail from '@/pages/KiteDetail.vue';
 import FlightList from '@/pages/FlightList.vue';
 import FlightForm from '@/pages/FlightForm.vue';
+import KiteCompare from '@/pages/KiteCompare.vue';
 import Analytics from '@/pages/Analytics.vue';
 
 const router = createRouter({
@@ -24,6 +25,11 @@ const router = createRouter({
       path: '/kites/new',
       name: 'kite-new',
       component: KiteForm,
+    },
+    {
+      path: '/kites/compare',
+      name: 'kite-compare',
+      component: KiteCompare,
     },
     {
       path: '/kites/:id',
